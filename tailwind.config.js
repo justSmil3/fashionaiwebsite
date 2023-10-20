@@ -26,7 +26,11 @@ module.exports = {
           32: "8rem",
       }
   },
-    extend: {},
+    extend: {
+      zIndex: {
+        'overlay': 9999,
+      }
+    },
   },
   plugins: [
     require('tailwindcss-bg-patterns'),

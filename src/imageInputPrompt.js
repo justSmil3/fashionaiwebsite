@@ -53,7 +53,7 @@ const ImageInputPrompt = ({inputText}) => {
 
   return (
       <div
-        className="relative w-full h-full overflow-hidden border border-gray-300 rounded-lg cursor-pointer"
+        className="relative w-full h-full border border-gray-300 rounded-lg cursor-pointer"
         ref={imageContainerRef}
         onClick={handleImageClick}
         style={{ backgroundColor: 'transparent' }}

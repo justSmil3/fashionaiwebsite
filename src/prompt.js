@@ -4,7 +4,7 @@ const Prompt = () => {
   const [inputText, setInputText] = useState('');
 
   return (
-    <div className="pr-4 flex items-center justify-center w-full">
+    <div className="flex items-center justify-center w-full">
       <div className="w-full relative">
         <div className="border border-gray-300 p-2 rounded-md">
           <div className="flex items-center relative">
