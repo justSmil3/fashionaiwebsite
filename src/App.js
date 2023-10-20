@@ -5,6 +5,7 @@ import ImageInputPrompt from './imageInputPrompt.js';
 import Header from './Header.js';
 import Prompt from './prompt.js';
 import Settings from './settings';
+import CustomNodeFlow from './CusomNodeFlow';
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
                 <ImagePrompt/>
               </div>
           </div>
+        </div>
+        <div className='flex'>
+          <CustomNodeFlow/>
         </div>
       </body>
     </div>
