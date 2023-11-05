@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-blue-400 from-10% to-blue-500 to-90% p-2 px-4">
+    <header className="h-[46px] bg-gradient-to-r from-blue-400 from-10% to-blue-500 to-90% p-2 px-4">
       <div className="mx-auto flex items-center justify-between">
         <div className="flex items-baseline">
       <div className="flex flex-row text-white text-2xl font-bold">

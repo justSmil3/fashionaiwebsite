@@ -46,23 +46,17 @@ const Prompt = () => {
   }
 
   return (
-    <div className="flex items-center justify-center w-full">
-      <div className="w-full relative">
-        <div className="border border-gray-300 p-2 rounded-md">
+    <div className="flex items-center justify-center h-full w-full">
+      <div className="w-full h-full relative">
+        <div className="h-full border border-2 border-gray-600 rounded-2xl">
           <div className="flex items-center relative">
             <span className="text-gray-600"></span>
               <textarea
-                className="bg-transparent outline-none focus:outline-none w-full h-32 resize-none overflow-y-auto text-white"
+                className="bg-transparent outline-none focus:outline-none h-full w-full resize-none overflow-y-auto text-white p-4"
                 placeholder="Enter your text here..."
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
               ></textarea>
-              {inputText && (
-                <button onClick={handleSubmit} className="absolute right-2 bottom-2 bg-blue-600 text-white py-1 px-3 rounded-md">
-                  Generate
-                </button>
-              )}
-              {imageSrc && (<img src={imageSrc} alt="Generated Image" />)}
           </div>
         </div>
       </div>
