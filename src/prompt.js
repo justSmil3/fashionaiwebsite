@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const Prompt = () => {
-  const [inputText, setInputText] = useState('');
+function Prompt(props){
+  // const [inputText, setInputText] = useState('');
   const [imageSrc, setImageSrc] = useState(null);
 
   const api_url = 'http://127.0.0.1:7861/sdapi/v1/txt2img';
@@ -9,11 +9,11 @@ const Prompt = () => {
   const handleSubmit = () => {
     // Create a JSON object with the text data
     const data = {
-      "prompt": inputText + ", realism, photorealism, full body",
+      "prompt": props.inputText + ", realism, photorealism, full body",
       "negative_prompt": "deformed, 2 people",
       "steps": 50
     };
-    setInputText(JSON.stringify(data));
+	// setInputText(JSON.stringify(data));
     // Send a POST request to the API
     fetch(api_url, {
       method: 'POST',
@@ -54,8 +54,8 @@ const Prompt = () => {
               <textarea
                 className="bg-transparent outline-none focus:outline-none h-full w-full resize-none overflow-y-auto text-white p-4"
                 placeholder="Enter your text here..."
-                value={inputText}
-                onChange={(e) => setInputText(e.target.value)}
+                value={props.inputText}
+                onChange={(e) => props.inputTextChange(e)}
               ></textarea>
           </div>
         </div>

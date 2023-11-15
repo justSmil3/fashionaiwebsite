@@ -12,10 +12,10 @@ const Header = () => {
       <div className="mx-auto flex items-center justify-between">
         <div className="flex items-baseline">
       <div className="flex flex-row text-white text-2xl font-bold">
-          ai fashion.
+          CL.A.I.D.E
         </div>
         <div className="flex flex-row text-gray-100 text-sm pl-4">
-          design made simple
+			<span className="font-bold">C</span>lothing&nbsp; <span className="font-bold">A</span>rtificial&nbsp; <span className="font-bold">I</span>ntelligence powered&nbsp; <span className="font-bold">D</span>esign&nbsp; <span className="font-bold">E</span>ntitiy
         </div></div>
         {/* Responsive Burger Menu with Dropdown */}
         <div className="sm:hidden relative">

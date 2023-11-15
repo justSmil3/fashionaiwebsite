@@ -2,6 +2,7 @@
 module.exports = {
   content: [
   	"./src/**/*.{js,jsx,ts,tsx}",
+	  "./src/pages/**/*.{js, jsx, ts, tsx}"
   ],
   theme: {
     patterns: {
@@ -27,6 +28,9 @@ module.exports = {
       }
   },
     extend: {
+	  spacing: {
+        '16/9': '56.25%', // 16:9 aspect ratio
+      
       zIndex: {
         'overlay': 9999,
       }
@@ -36,4 +40,4 @@ module.exports = {
     require('tailwindcss-bg-patterns'),
   ],
 }
-
+}
