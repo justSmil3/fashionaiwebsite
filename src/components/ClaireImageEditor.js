@@ -14,6 +14,9 @@ class ClaireImageEditor extends React.Component{
 		return( 
 			<div className='bg-black text-white'>
 				<Toolbar />
+			        <div>
+			            <button className='button' onClick={()=> this.setState({split: !this.state.split.value}) }>test</button>
+			        </div>
 				{this.state.split && (
 					<div>Hello</div>
 				)
